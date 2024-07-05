@@ -1,0 +1,163 @@
+*
+{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+   
+    color: white;
+}
+
+html,body
+{
+    height: 100%;
+    width: 100%;
+
+}
+
+.nav
+{
+    height: 120px ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    z-index: 99;
+}
+
+.nav img{
+    height: 160px;
+    cursor: pointer;
+    
+}
+
+.nav ul{
+    display: flex;
+    gap: 50px;
+}
+
+.nav li {
+    list-style-type: none;
+    
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: 900;
+    
+}
+.nav a{
+    display: inline-block;
+    transition: translate 0.9 ease-in-out 0;
+    cursor: pointer;
+    font-family: 'Fredericka the Great', Arial, sans-serif;
+}
+
+.nav a:hover
+{
+    transform: translatey(-5px);
+
+}
+
+.main{
+    height: 100%;
+}
+
+video
+{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+}
+
+.search-btn
+{
+    color: black;
+    border: none;
+    padding: 5px 5px;
+    font-family: 'Roboto Mono', Arial, sans-serif;
+    border-radius: 20%;
+    font-weight: 900;
+    transition: all 0.3 ease-in 0;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.main
+{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.home-page
+{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-page h1 {
+    font-size: 150px;
+    font-family: 'bangers';
+    font-weight: bolder;
+    position: relative;
+}
+
+.home-page h1::before
+{
+    content: 'WATCH AND ENJOY';
+    position: absolute;
+    color: gold;
+    top: -4px;
+    left: -4px;
+}
+
+.home-page h2{
+    font-family: 'Shadows Into Light';
+    font-size: 40px;
+    margin-bottom: 2.5rem;
+}
+
+.sign
+{
+   padding: 10px 20px;
+    color: black;
+    border: none;
+    border-radius: 10%;
+    
+}
+.btn-in{
+    color: black;
+    font-size: small;
+    font-family:'Press Start 2p';
+    transition: all 0.3 ease-in 0;
+    gap: 10px
+    ;
+}
+.btn-in:hover
+{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-up{
+    color: black;
+    font-size: small;
+    font-family:'Press Start 2p';
+    transition: all 0.3 ease-in 0;
+    gap: 10px
+    ;
+}
+.btn-up:hover
+{
+    background-color: rgba(255, 255, 255, 0.5);
+}
