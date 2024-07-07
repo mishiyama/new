@@ -1,22 +1,30 @@
-*
-{
+* {
     padding: 0;
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
-   
+
     color: white;
 }
 
-html,body
-{
+html,
+body {
     height: 100%;
     width: 100%;
 
 }
 
-.nav
-{
-    height: 120px ;
+.cursor {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    opacity: 0.7;
+    z-index: 100;
+    position: fixed;
+}
+
+.nav {
+    height: 120px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -26,77 +34,115 @@ html,body
     z-index: 99;
 }
 
-.nav img{
+.nav img {
     height: 160px;
     cursor: pointer;
-    
+
 }
 
-.nav ul{
+.nav ul {
     display: flex;
     gap: 50px;
 }
 
 .nav li {
     list-style-type: none;
-    
+
 }
-.nav ul li a{
+
+.nav ul li a {
     text-decoration: none;
     color: white;
     font-size: larger;
     font-weight: 900;
-    
+
 }
-.nav a{
+
+.nav a {
     display: inline-block;
     transition: translate 0.9 ease-in-out 0;
     cursor: pointer;
     font-family: 'Fredericka the Great', Arial, sans-serif;
 }
 
-.nav a:hover
-{
+.nav a:hover {
     transform: translatey(-5px);
 
 }
 
-.main{
+.main {
     height: 100%;
 }
 
-video
-{
+video {
     height: 100vh;
     width: 100%;
     object-fit: cover;
     position: fixed;
 }
 
-.search-btn
-{
-    color: black;
+.search-btn {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
-    padding: 5px 5px;
+    padding: 10px 10px;
     font-family: 'Roboto Mono', Arial, sans-serif;
-    border-radius: 20%;
+    cursor: pointer;
     font-weight: 900;
     transition: all 0.3 ease-in 0;
     cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.search-btn input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-family: 'Press Start 2p' ,sans-serif;
+    font-size: 16px;
+    background: transparent;
+    transition: all 0.4s ease-in 0.1s;
+    color: black;
+   
+
+}
+
+.input-placeholder
+{
+    text-align: center;
+    font-weight: bolder;
+    border: none;
+    border-radius: 0;
+    color: black;
+}
+
+.search-btn:hover input
+{
+    width: 180px;
+   border: none;
+
+}
+
+.search-btn i {
+    color: white;
+   
+    font-size: 18px;
 }
 
 .search-btn:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-.main
-{
+.main {
     position: relative;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.home-page
-{
+.home-page {
     height: 100vh;
     width: 100%;
     position: relative;
@@ -111,53 +157,51 @@ video
     font-family: 'bangers';
     font-weight: bolder;
     position: relative;
+    color: black;
 }
 
-.home-page h1::before
-{
+.home-page h1::before {
     content: 'WATCH AND ENJOY';
     position: absolute;
     color: gold;
     top: -4px;
-    left: -4px;
+    left: -7px;
 }
 
-.home-page h2{
+.home-page h2 {
     font-family: 'Shadows Into Light';
     font-size: 40px;
     margin-bottom: 2.5rem;
 }
 
-.sign
-{
-   padding: 10px 20px;
+.sign {
+    padding: 10px 20px;
     color: black;
     border: none;
     border-radius: 10%;
-    
+
 }
-.btn-in{
+
+.btn-in {
     color: black;
     font-size: small;
-    font-family:'Press Start 2p';
+    font-family: 'Press Start 2p';
     transition: all 0.3 ease-in 0;
-    gap: 10px
-    ;
+    gap: 10px;
 }
-.btn-in:hover
-{
+
+.btn-in:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.btn-up{
+.btn-up {
     color: black;
     font-size: small;
-    font-family:'Press Start 2p';
+    font-family: 'Press Start 2p';
     transition: all 0.3 ease-in 0;
-    gap: 10px
-    ;
+    gap: 10px;
 }
-.btn-up:hover
-{
+
+.btn-up:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
