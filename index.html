@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Fredericka+the+Great&family=Shadows+Into+Light&family=Press+Start+2P&family=Bangers&family=Kaushan+Script&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <div class="cursor">
+        
+    </div>
    <div class="nav">
        <img src="logo.png" alt="web-logo">
        <ul>
@@ -15,8 +20,11 @@
            <li><a href="#">WATCH NOW</a></li>
            <li><a href="#">COMPLETED SERIES</a></li>
        </ul>
-       <button class="search-btn">SEARCH</button>
-   </div>
+       <button class="search-btn">
+        <input class="input-placeholder" type="text" placeholder="search">
+        <i class='bx bx-search'></i>
+    </button>
+    </div>
    <video src="vid.mp4" autoplay loop muted></video>
 
    <div class="main">
@@ -29,6 +37,13 @@
         </div>
 
        </div>
+       <div class="mid-page">
+      
+       </div>
+       
    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
 </body>
 </html>
